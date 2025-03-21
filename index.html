@@ -58,13 +58,112 @@
             </li>
           </ul>
         </address>
+        <button class="menu-burger-btn" type="button">
+          <svg class="menu-burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!--Mobile menu-->
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-btn">
+            <svg class="mobile-menu-close-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-nav-list">
+              <li class="mobile-menu-nav-list-item">
+                <a class="mobile-menu-nav-link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-nav-list-item">
+                <a class="mobile-menu-nav-link" href="#portfolio-section"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-menu-nav-list-item">
+                <a class="mobile-menu-nav-link" href="#footer-section"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-menu-contacts-list">
+              <li class="mobile-menu-contacts-item">
+                <a
+                  class="mobile-menu-contacts-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-menu-contacts-item">
+                <a class="mobile-menu-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mobile-menu-social-container">
+            <ul class="mobile-menu-social-list">
+              <li class="mobile-menu-social-list-item">
+                <a
+                  class="mobile-menu-social-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg class="social-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-list-item">
+                <a
+                  class="mobile-menu-social-link"
+                  href="https://x.com/"
+                  target="_blank"
+                >
+                  <svg class="social-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-list-item">
+                <a
+                  class="mobile-menu-social-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg class="social-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-list-item">
+                <a
+                  class="mobile-menu-social-link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <svg class="social-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
       <!--Hero section-->
 
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn">Order Service</button>
@@ -73,7 +172,7 @@
 
       <!--Features section-->
 
-      <section class="features">
+      <section class="features hidden">
         <div class="container">
           <h2 class="visually-hidden">Our features</h2>
 
@@ -132,7 +231,7 @@
 
       <!--Team section-->
 
-      <section class="team">
+      <section class="team hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
 
@@ -379,7 +478,7 @@
 
       <!--Portfolio section-->
 
-      <section class="portfolio" id="portfolio-section">
+      <section class="portfolio hidden" id="portfolio-section">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -503,7 +602,7 @@
     </main>
 
     <!--Footer section-->
-    <footer class="page-footer" id="footer-section">
+    <footer class="page-footer hidden" id="footer-section">
       <div class="container">
         <div class="footer-logo-container">
           <a class="logo footer-logo" href="./index.html"
@@ -591,7 +690,7 @@
 
     <!--Modal window-->
 
-    <div class="backdrop">
+    <div class="backdrop hidden">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="close-btn-icon" width="8" height="8">
