@@ -548,7 +548,7 @@ body {
 
 .page-footer .container {
     display: flex;
-    align-items: baseline
+    align-items: baseline;
 }
 
 .page-footer-text {
