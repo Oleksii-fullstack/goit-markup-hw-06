@@ -58,7 +58,7 @@
             </li>
           </ul>
         </address>
-        <button class="menu-burger-btn" type="button">
+        <button class="menu-burger-btn js-toggle" type="button">
           <svg class="menu-burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -66,7 +66,7 @@
       </div>
 
       <!--Mobile menu-->
-      <div class="mobile-menu">
+      <div class="mobile-menu js-toggle">
         <div class="container mobile-menu-container">
           <button class="mobile-menu-close-btn">
             <svg class="mobile-menu-close-btn-icon" width="8" height="8">
@@ -957,5 +957,26 @@
         </form>
       </div>
     </div>
+
+    <script>
+      // close modal
+      document
+        .querySelector('.modal-close-btn')
+        .addEventListener('click', () => {
+          document.querySelector('.backdrop').classList.remove('is-open');
+        });
+
+      // open mobile-menu
+      document.querySelector('.js-toggle').addEventListener('click', () => {
+        document.querySelector('.mobile-menu').classList.add('is-open');
+      });
+
+      // close mobile-menu
+      document
+        .querySelector('.mobile-menu-close-btn')
+        .addEventListener('click', () => {
+          document.querySelector('.mobile-menu').classList.remove('is-open');
+        });
+    </script>
   </body>
 </html>

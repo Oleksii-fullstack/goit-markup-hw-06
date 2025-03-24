@@ -1252,25 +1252,27 @@ a {
     background-color: #e7e9fc;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.1);
-    transition: background-color var(--animation), border var(--animation);
+    transition: background-color var(--animation), border var(--animation), transform var(--animation);
 }
 
-.modal-close-btn:hover,
+.modal-close-btn:active,
 .modal-close-btn:focus {
     background-color: var(--ocean);
     border: none;
+    transform: rotate(180deg);
 }
 
 .close-btn-icon {
     fill: var(--navy-blue);
     stroke: var(--navy-blue);
-    transition: fill var(--animation);
+    transition: fill var(--animation), transform var(--animation);
 }
 
-.modal-close-btn:hover .close-btn-icon,
+.modal-close-btn:active .close-btn-icon,
 .modal-close-btn:focus .close-btn-icon {
     fill: #ffffff;
     stroke: #ffffff;
+    transform: rotate(180deg);
 }
 
 .modal-title {
@@ -1282,8 +1284,6 @@ a {
     color: #2e2f42;
     margin-bottom: 16px;
 }
-
-.modal-form {}
 
 .modal-wrapper {
     margin-bottom: 8px;
@@ -1435,7 +1435,7 @@ a {
     transition: background-color var(--animation);
 }
 
-.modal-send-btn:hover,
+.modal-send-btn:active,
 .modal-send-btn:focus {
     background-color: #404bbf;
 }
@@ -1448,6 +1448,22 @@ a {
         padding-left: 24px;
         padding-right: 24px;
     }
+
+    .modal-close-btn:hover {
+        background-color: var(--ocean);
+        border: none;
+        transform: rotate(180deg);
+        }
+
+    .modal-close-btn:hover .close-btn-icon {
+        fill: #ffffff;
+        stroke: #ffffff;
+        transform: rotate(180deg);
+        }
+
+    .modal-send-btn:hover {
+        background-color: #404bbf;
+        }
 
 }
 
